@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "FirePlayer",
+  "version": "0.3.2",
+  "description": "Adds a button to playing videos that opens them in a clean fullscreen player with gesture controls, or hands them off to a native Android video player.",
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg"
+  },
+  "permissions": [
+    "webRequest",
+    "clipboardWrite",
+    "storage",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["player.js", "content.js"],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "fireplayer@edodoo",
+      "strict_min_version": "115.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    },
+    "gecko_android": {
+      "strict_min_version": "120.0"
+    }
+  }
+}

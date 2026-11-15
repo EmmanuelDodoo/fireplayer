@@ -1,0 +1,11 @@
+# Local tooling
+platform-tools-latest-windows/
+platform-tools-latest-windows.zip
+.claude/
+
+# web-ext build / signing output
+web-ext-artifacts/
+.amo-upload-uuid
+
+# Credentials
+.env
