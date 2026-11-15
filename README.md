@@ -6,6 +6,15 @@ Tapping it opens the video in a clean fullscreen player with gesture controls.
 Streams that allow it can also be handed to a native Android player (VLC, MX
 Player, ...) from the **⋯** panel.
 
+> [!WARNING]
+> **AI-generated, unreviewed code.** Everything in this repository was
+> written by [Claude Code](https://claude.com/claude-code), Anthropic's AI
+> coding tool. The author has not reviewed the code; it has only been tried
+> out in normal use. The extension asks for broad permissions (it runs on
+> every site and can see the network requests pages make), so read the
+> source before installing it. Use at your own risk. It comes with no
+> warranty.
+
 ## The player
 
 The site's own `<video>` element is moved into FirePlayer's fullscreen layer
